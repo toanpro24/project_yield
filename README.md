@@ -1,2 +1,2 @@
 # project_yield
-Group Members : Sultan, Toan, Brady, Andy, Sophie
+Group Members : Sultan Almarzooqi, Toan, Brady, Andy, Sophie
