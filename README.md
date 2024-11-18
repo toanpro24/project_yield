@@ -1,11 +1,12 @@
-CMSE 202 Final Project
-Group Members: Brady, Toan, Sophie, Sultan, and Andy
-November 17th, 2024
-How Treasury Yields Predict Economic Recessions
-Background & Motivations
+# CMSE 202 Final Project
+### Group Members: Brady, Toan, Sophie, Sultan, and Andy
+November 19th, 2024
+
+## How Treasury Yields Predict Economic Recessions
+### Background & Motivations
 This project explores the potential of Treasury yields as indicators of economic downturns. With a focus on the spread between long-term and short-term yields, we investigate whether these financial metrics can signal impending recessions. Our aim is to provide valuable insights for investors and individuals interested in economic forecasting, especially in today's unpredictable financial climate.
 
-Data Collection and Cleaning
+### Data Collection and Cleaning
 We collected data primarily from US Government sources, focusing on Treasury yield trends across various maturity dates, alongside US GDP data. The data was obtained in CSV format, and the following datasets were used:
 
 Treasury Yields:
@@ -17,7 +18,7 @@ Treasury Yields:
 3-Month Yield: DGS3MO.csv
 6-Month Yield: DGS6MO.csv
 
-Code Implementation
+### Code Implementation
 The following Python packages were imported for the project:
 
 import pandas as pd
@@ -56,7 +57,7 @@ yr30 = clean_dataset(pd.read_csv('data/DGS30.csv'), 'DGS30')
 mo3 = clean_dataset(pd.read_csv('data/DGS3MO.csv'), 'DGS3MO')
 mo6 = clean_dataset(pd.read_csv('data/DGS6MO.csv'), 'DGS6MO')
 
-Data Visualization
+### Data Visualization
 To visualize the monthly yield averages starting from 2002, we resampled the data and plotted it. This visualization effectively illustrates trends over time:
 
 # Resample to monthly frequency, taking the mean of each month
